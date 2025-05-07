@@ -3,213 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ritu Pomaje | Portfolio</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Ritu Pomaje - Netflix-style Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Font Awesome (no kit required) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-...snipped..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-  <header>
-    <div class="logo"><font color="#e50914">Ritu Pomaje</font></span></div>
+  <header class="header">
+    <h1 class="logo">Ritu Pomaje</h1>
     <nav>
-      <ul>
-        <li></li>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#certificates">Certificates</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <img src="property/Ritu_Linkedin.jpg" alt="Ritu's photo" class="profile-photo" />
-      <h1>Welcome</h1>
+  <section class="hero" id="about">
+    <div class="container">
+      <h2>About Me</h2>
       <p>
-        I am a graduate student, pursuing Master's in Business Analytics at Hult International Business School, San Fransisco, CA. Prior to this, I was a product manager in FinTech. 
+        Hi! I'm Ritu — an ex-fintech product sorceress turned analytics ninja. From building milestone projects at Bajaj to cracking debate trophies like popcorn at a Netflix binge night, I balance data, code, and communication like a true multitasking marvel. Currently decoding business insights at Hult with a GPA that earns me a Dean's List badge and caffeine on repeat.
       </p>
-      <div class="socials">
-        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/ritu-pomaje/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:
-        ritupomaje@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
     </div>
   </section>
-  
-  <section id="competencies" class="carousel-section">
-    <h2>Core Competencies</h2>
-    <div class="carousel">
-      <div class="carousel-track">
-        <div class="card" style="background-image: url('https://source.unsplash.com/400x225/?code');">
-          <div class="card-content">
-            <h3>Product Management Strategy</h3>
-          </div>
-        </div>
-        
-        <div class="card">
-          <div class="card-content">
-            <h3>Agile Methodologies<br>(Scrum, Kanban)</h3>
-          </div>
-        </div>
-        
-        <div class="card">
-          <div class="card-content">
-            <h3>Stakeholder Engagement</h3>
-          </div>
-        </div>
 
-        <div class="card">
-          <div class="card-content">
-            <h3>Roadmap</h3>
-          </div>
-        </div>
+  <section class="timeline" id="timeline">
+    <div class="container">
+      <h2>My Journey</h2>
+      <ul>
+        <li><strong>2025</strong>: MS in Business Analytics @ Hult – Dean’s List Achiever</li>
+        <li><strong>2020-2023</strong>: Sr. Product Manager @ Bajaj Markets – Super Squad, Super Achiever, Cross-Functional Ace</li>
+        <li><strong>2019</strong>: Gold medals in debates and overall 2nd ranker @ BCA</li>
+      </ul>
+    </div>
+  </section>
 
-        <div class="card">
-          <div class="card-content">
-            <h3>QA Planning</h3>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h3>Data-Driven Decision Making</h3>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h3>Backlog Management</h3>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h3>API Integration Solution</h3>
-          </div>
-        </div>
-
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skill-group">
+        <h3>Technical</h3>
+        <ul>
+          <li>Python, R, SQL, scikit-learn, Pandas, NumPy, Tableau</li>
+          <li>Data Cleaning, Data Visualization, Machine Learning</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <ul>
+          <li>Git, JIRA, Agile, MongoDB, Excel, AWS</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Communication</h3>
+        <ul>
+          <li>Public Speaking, Storytelling, UX Writing, Team Leadership</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section id="timeline" class="timeline-section">
-    <h2>Timeline</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-logo">
-            <a href="https://www.siu.edu.in//" target="_blank">
-              <img src="property/hult-logo-black.svg" alt="iit_logo" class="logo-img" />
-            </a>
-          </div>
-        <div class="timeline-content">
-          <p class="timeline-year">Sept 2024 - Jun 2025</p>
-          <h3 class="timeline-title">Masters in Business Analytics.</h3>
-          <p class="timeline-description">
-            $$$$$$$$$ I want lots of money. $$$$$
-          </p>
-        </div>
-      </div>  
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-logo">
-            <a href="https://www.bajajfinserv.in/" target="_blank">
-              <img src="property/Bajaj_Finserv_Logo.svg" alt="iit_logo" class="logo-img" />
-            </a>
-        </div>
-        <div class="timeline-content">
-          <p class="timeline-year">Oct 2020 - Jan 2024</p>
-          <h3 class="timeline-title">Senior Product Owner</h3>
-          <p class="timeline-description">
-            Delivered key organizational projects by collaborating with 15-member technical teams and cross- functional stakeholders to ensure timely and effective execution.
-            • Spearheaded implementation of API solutions, including eKYC, vKYC, eMandate, design, and credit score processes, significantly enhancing product capabilities.
-            • Enhanced user conversion rates by analyzing funnel performance, identifying bottlenecks, and implementing targeted solutions.
-            • Defined actionable user stories for development teams, ensuring alignment with product features and business objectives and maintained project roadmaps, backlogs, and sprint plans, facilitating streamlined scrum processes.
-            • Managed API rollouts that streamlined digital onboarding processes, reducing customer acquisition time by 30%.
-            • Identified risks in API management and provided resolution strategies to ensure seamless system integration.
-            • Resolved moderate-to-high severity issues during project lifecycles, ensuring consistent performance post-deployment.
-          </p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-logo">
-            <a href="https://www.siu.edu.in//" target="_blank">
-              <img src="property/Logo_of_Symbiosis_International_University.svg" alt="iit_logo" class="logo-img" />
-            </a>
-          </div>
-        <div class="timeline-content">
-          <p class="timeline-year">Jun 2019- Apr 2021</p>
-          <h3 class="timeline-title">Masters in Business Administration.</h3>
-          <p class="timeline-description">
-            I completed my MBA, specializing in Information Technology, at the Symbiosis International University, Pune. 
-          </p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-logo">
-            <a href="https://www.maharshikarve.ac.in/" target="_blank">
-              <img src="property/mksss-logo-1.svg" alt="iit_logo" class="logo-img" />
-            </a>
-        </div>
-        <div class="timeline-content">
-          <p class="timeline-year">Jun 2016- Apr 2019</p>
-          <h3 class="timeline-title">Bachelors in Computer Applications.</h3>
-          <p class="timeline-description">
-            I did my undergraduate at MKSSS, Pune, a subsidiary of <i>University of Mumbai</i>. #MENTION ABOUT THE COURSE/ PROJECT. 
-          </p>
-        </div>
-      </div>
-    </div>
+  <section class="awards" id="awards">
+    <div class="container">
+      <h2>Awards & Achievements</h2>
+      <ul>
+        <li>Dean's List (Hult MSBA, GPA 3.6+)</li>
+        <li>Super Achiever Award (2023, Bajaj Markets)</li>
+        <li>Super Squad Award (2022, Bajaj Markets)</li>
+        <li>Cross Functional Award (2021, Bajaj Markets)</li>
+        <li>Overall 2nd Rank in BCA | College Gold Medalist</li>
+        <li>3× Gold Medal – Speech & Debate (Cognitive Exchange, CA)</li>
+      </ul>
     </div>
   </section>
 
-  <section id="about" class="info-section">
-    <h2>About Me</h2>
-    <p># Some usual rant.</p>
-    <h3>Technical Skills</h3> 
-    <ul>
-      <li>Programming Languages:<br>
-        <ol>
-          <li>Python3 (for those who want to feel like programmers, but are not brave enough to go C/ C++/ Java)</li>
-          <li>R (for those who think Python is not good for data analysis and are clearly wrong.)</li>
-          <li>SQL - Sequential Query Language (Money maker)</li>
-          <li>Javascript</li>
-          <li>HTML</li>
-        </ol>
-      </li>
-      <li>Libraries<br>
-        <ol>
-          <li>Matplotlib, Seaborn</li>
-          <li>NumPy, Pandas, SciKit-learn</li>
-        </ol>
-      </li>
-      <li>Tools, Frameworks, and Software<br>
-        <ol>
-          <li>Jira, Confluence, Tableau, Adobe Analytics, Adobe Experience Manager, New Relic, Kibana</li>
-        </ol>
-      </li>
-    </ul>
+  <section class="certificates" id="certificates">
+    <div class="container">
+      <h2>Certificates</h2>
+      <ul>
+        <li>Data Manipulation in SQL – DataCamp</li>
+        <li>Intermediate Python – DataCamp</li>
+        <li>Joining Data in SQL – DataCamp</li>
+        <li>Supervised Learning with scikit-learn – DataCamp</li>
+        <li>Intermediate R – DataCamp</li>
+        <li>Unsupervised Learning in Python – DataCamp</li>
+        <li>Intro to Data Science in Python – DataCamp</li>
+        <li>Geospatial Data in Python – DataCamp</li>
+        <li>Winning a Kaggle Competition – DataCamp</li>
+        <li>AWS Fundamentals: Going Cloud-Native – AWS</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="contact" class="info-section">
-    <h2>Contact</h2>
-    <p>Drop me a line at <a href="mailto:ritupomaje@gmail.com">ritupomaje@gmail.com</a> or find me on GitHub, LinkedIn, and beyond.</p>
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Let's Connect</h2>
+      <p>📧 Email: <a href="mailto:ritup@example.com">ritup@example.com</a></p>
+      <p>💼 LinkedIn: <a href="https://linkedin.com/in/ritu-pomaje" target="_blank">ritu-pomaje</a></p>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Ritu Pomaje. Built by <a href="https://rishp11.github.io/">Rishabh Pomaje</a> (I employ child labour, that too unpaid) & ChatGPT 4.0 (free credits only, I am a tight one and a freeloader).</p>
+    <p>&copy; 2025 Ritu Pomaje. Streaming data like Netflix streams drama.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    ScrollReveal().reveal('.container', { delay: 300, distance: '30px', duration: 800, origin: 'bottom' });
+  </script>
 </body>
 </html>
