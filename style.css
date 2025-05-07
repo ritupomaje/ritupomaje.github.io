@@ -60,12 +60,12 @@ nav a {
 }
 
 .profile-photo {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 4px solid #e50914;
+  width: 250px; /* Increased width for zoomed-out effect */
+  height: 250px; /* Increased height for zoomed-out effect */
+  border-radius: 0; /* Removed circular shape */
+  /* border: 4px solid #e50914; Optional: Keep the border */
   margin-bottom: 20px;
-  object-fit: cover;
+  object-fit: contain; /* Ensures the entire image fits within the box */
 }
 
 /* Carousel Section */
