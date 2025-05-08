@@ -1,3 +1,4 @@
+/* Reset and Base */
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
 }
 
 html {
-  scroll-behavior: smooth; /* Smooth anchor link scrolling */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Header */
 header.header {
   display: flex;
   justify-content: space-between;
@@ -51,6 +53,7 @@ header.header {
   outline: none;
 }
 
+/* Section General */
 section {
   padding: 3rem 2rem;
 }
@@ -67,12 +70,27 @@ h2 {
   text-transform: uppercase;
 }
 
-/* Accessibility improvement */
 h2:focus {
   outline: 2px dashed #e50914;
   outline-offset: 4px;
 }
 
+h3 {
+  color: #fff;
+  margin-top: 1.5rem;
+}
+
+h4 {
+  color: #bbb;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Photo Top */
 .photo-top {
   text-align: center;
   padding-top: 2rem;
@@ -84,6 +102,16 @@ h2:focus {
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   object-fit: cover;
+}
+
+/* Intro tagline */
+.intro-tagline {
+  font-size: 1.25rem;
+  color: #ccc;
+  max-width: 700px;
+  margin: 1.5rem auto 0;
+  text-align: center;
+  font-style: italic;
 }
 
 /* Timeline */
@@ -118,12 +146,32 @@ h2:focus {
   margin-bottom: 0.3rem;
 }
 
-ul {
+.vt-content ul {
   list-style: disc;
   margin-left: 2rem;
   margin-bottom: 1rem;
 }
 
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skills-grid h4 {
+  color: #e50914;
+  margin-bottom: 0.5rem;
+}
+
+.skills-grid ul {
+  list-style: circle;
+  margin-left: 1.5rem;
+  color: #ccc;
+}
+
+/* Contact */
 .contact a {
   color: #e50914;
   text-decoration: none;
@@ -135,6 +183,7 @@ ul {
   outline: none;
 }
 
+/* Footer */
 footer {
   text-align: center;
   background: #000;
@@ -143,7 +192,25 @@ footer {
   margin-top: 2rem;
 }
 
-/* ✅ Responsive enhancement */
+/* Section titles with style */
+.section-title {
+  font-size: 2rem;
+  color: #e50914;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #e50914;
+  margin-top: 5px;
+}
+
+/* Responsive Enhancements */
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
@@ -157,6 +224,10 @@ footer {
 
   .profile-photo-top {
     width: 140px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 
   h2 {
