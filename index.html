@@ -192,12 +192,18 @@
 </body>
 <script>
   document.querySelectorAll('.project-title').forEach(button => {
-    button.addEventListener('click', () => {
-      const panel = button.nextElementSibling;
-      const isVisible = panel.style.display === 'block';
-      document.querySelectorAll('.project-details').forEach(p => p.style.display = 'none');
-      panel.style.display = isVisible ? 'none' : 'block';
-    });
+  button.addEventListener('click', () => {
+    const panel = button.nextElementSibling;
+    
+    // Use computed style to check visibility
+    const isVisible = window.getComputedStyle(panel).display === 'block';
+    
+    // Hide all project details first
+    document.querySelectorAll('.project-details').forEach(p => p.style.display = 'none');
+    
+    // Toggle current panel
+    panel.style.display = isVisible ? 'none' : 'block';
   });
+});
 </script>
 </html>
