@@ -28,6 +28,7 @@
       <ul class="nav-links">
         <li><a href="#about">Behind the Scenes</a></li>
         <li><a href="#timeline">Career Episodes</a></li>
+        <li><a href="#projects">Projects</a></li> <!-- ✅ Add this line -->
         <li><a href="#skills">Toolbox</a></li>
         <li><a href="#awards">Highlights</a></li>
         <li><a href="#certificates">Credentials</a></li>
@@ -38,12 +39,16 @@
 
   <section class="photo-top">
     <img src="property/Ritu_Linkedin.jpg" alt="Ritu Pomaje" class="profile-photo-top" />
-    <p class="intro-tag">Welcome to my world of caffeine-powered insights, strategy-led journeys, and data-fueled storytelling. Think of it as Netflix, but for business brilliance.</p>
+    <p class="intro-tag">
+        Step into an award-winning world where data meets creativity — fueled by relentless curiosity and strategic mastery.<br>
+        Here, every insight is a blockbuster, every story a chart-topping hit.
+      </p>
+      
   </section>
 
   <section class="hero" id="about">
     <div class="container">
-      <h2>The Director’s Cut: Behind the Scenes</h2>
+      <h2>🎞️ The Director’s Cut: Behind the Scenes</h2>
       <p>I'm Ritu — an ex-fintech product sorceress turned analytics ninja. From shipping APIs at Bajaj to acing boardrooms and debate podiums, I balance data, code, and communication like a true multitasking marvel.</p>
       <p>Currently decoding business insights at Hult International Business School (Dean’s List, caffeine-powered), I specialize in translating chaos into clarity — whether through dashboards, ML models, or razor-sharp product roadmaps.</p>
       <p>I’ve led digital transformation at scale, launched lending features impacting millions, optimized funnels using SQL + Tableau, and delivered insights that move needles (and markets).</p>
@@ -53,7 +58,7 @@
 
   <section class="timeline" id="timeline">
     <div class="container">
-      <h2>Career Episodes: Roles That Shaped Me</h2>
+      <h2>🎭 Career Episodes: Roles That Shaped Me </h2>
       <div class="vertical-timeline">
         <div class="vt-item">
           <div class="vt-dot"></div>
@@ -90,6 +95,43 @@
       </div>
     </div>
   </section>
+
+  <section id="projects" class="container">
+    <h2>🎬 Feature Presentations: My Data Projects </h2>
+  
+    <div class="project">
+      <button class="project-title">🌆 Urban Heat Island (UHI) Effect Analysis in Montgomery County</button>
+      <div class="project-details">
+        <p><strong>Project Type:</strong> Geospatial Analysis & Machine Learning<br>
+        <strong>Tools Used:</strong> Python, QGIS, Google Earth Engine, Sentinel-2 Satellite Data, scikit-learn, pandas, geopandas, matplotlib, seaborn</p>
+        <p><strong>Objective:</strong> Analyze and model UHI effects using satellite imagery and ML to identify high-risk heat zones.</p>
+        <ul>
+          <li><strong>Data Acquisition & Preprocessing:</strong> Cloud-masked, composited Sentinel-2 data via GEE.</li>
+          <li><strong>Feature Engineering:</strong> NDVI, NDBI, NDWI, LST proxies; topography from DEM/QGIS.</li>
+          <li><strong>Modeling:</strong> Random Forest with GridSearchCV; evaluated via RMSE & R².</li>
+          <li><strong>Visualization:</strong> Heatmaps, choropleths for UHI-prone zones.</li>
+          <li><strong>Insights:</strong> High NDVI correlates with low temps; 3°C UHI drop via greenery.</li>
+        </ul>
+        <p><strong>Tools Used:</strong> Python, Pandas, Scikit-Learn, Seaborn, Matplotlib, Kaggle</p>
+        <p><strong>Outcome:</strong> Delivered a predictive geospatial model to inform sustainable urban planning in Montgomery County.</p>
+      </div>
+    </div>
+  
+    <div class="project">
+      <button class="project-title">🏡 Predicting House Prices – A Data Science Approach (Ranked #1 in Cohort)</button>
+      <div class="project-details">
+        <p><strong>Objective:</strong> Built a top-ranked regression model on Kaggle housing dataset with robust EDA, transformation, and feature engineering.</p>
+        <ul>
+          <li><strong>Achievements:</strong> Won the Kaggle Competition in the Cohort, engineered 12+ new features, minimized prediction errors.</li>
+          <li><strong>Workflow:</strong> Cleaned, imputed, and transformed skewed data; encoded categoricals; engineered domain-specific metrics like “Bath/Bed Ratio”, “Luxury Score”.</li>
+          <li><strong>EDA:</strong> Used histograms, heatmaps, and outlier analysis to drive decisions.</li>
+          <li><strong>Modeling:</strong> Scikit-learn regressors, p-value-driven selection; evaluated via MAE, MSE, R².</li>
+          <li><strong>Final Insights:</strong> Garage, finish quality, and storage area drove prices; log-transform improved prediction stability.</li>
+        </ul>
+        <p><strong>Tools Used:</strong> Python, Pandas, Scikit-Learn, Seaborn, Matplotlib, Kaggle</p>
+      </div>
+    </div>
+  </section>  
 
   <section id="skills" class="container">
     <h2>🛠️ Toolbox: My Professional Arsenal</h2>
@@ -148,4 +190,14 @@
     <p>&copy; 2025 Ritu Pomaje. Fueled by data, caffeine, and conviction. Streaming insights like Netflix Dramas.</p>
   </footer>
 </body>
+<script>
+  document.querySelectorAll('.project-title').forEach(button => {
+    button.addEventListener('click', () => {
+      const panel = button.nextElementSibling;
+      const isVisible = panel.style.display === 'block';
+      document.querySelectorAll('.project-details').forEach(p => p.style.display = 'none');
+      panel.style.display = isVisible ? 'none' : 'block';
+    });
+  });
+</script>
 </html>
