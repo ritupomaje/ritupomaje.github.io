@@ -212,10 +212,11 @@ footer {
 }
 
 .project-details {
-  .project-details {
-    display: none;
-    /* other styles */
-  }
+  display: none;
+  margin-top: 10px;
+  padding-left: 10px;
+  color: #ccc;
+}
   
 }
 
