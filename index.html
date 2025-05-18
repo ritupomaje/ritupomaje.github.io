@@ -131,6 +131,69 @@
         <p><strong>Tools Used:</strong> Python, Pandas, Scikit-Learn, Seaborn, Matplotlib, Kaggle</p>
       </div>
     </div>
+      <div class="project">
+        <button class="project-title">📱 Facebook Live Engagement Analysis – Video vs Non-Video</button>
+        <div class="project-details">
+          <p><strong>Project Type:</strong> Unsupervised Machine Learning / Social Media Analytics<br>
+          <strong>Tools Used:</strong> Python, Pandas, scikit-learn, Matplotlib, Seaborn, PCA, KMeans, Jupyter</p>
+  
+          <p><strong>Objective:</strong> Identify engagement patterns on Facebook Live posts in Thailand, with a focus on understanding whether video content outperforms other types in terms of user interactions.</p>
+  
+          <ul>
+            <li><strong>📊 Data Scope:</strong> 10,000+ Facebook posts from Thailand across text, link, image, and video types.</li>
+            <li><strong>📐 Feature Set:</strong> Reactions (likes, loves, wows, hahas, sads, angrys), comments, shares.</li>
+            <li><strong>🔍 PCA:</strong> Reduced 10 engagement features to 2 key dimensions, capturing 85%+ variance.</li>
+            <li><strong>🔗 Clustering:</strong> Applied KMeans to identify clusters of high, medium, and low engagement patterns.</li>
+            <li><strong>📹 Key Insight:</strong> Video posts consistently appeared in the top engagement cluster—2.4× more interactions than non-video posts.</li>
+            <li><strong>🧠 Value:</strong> Demonstrated the dominance of video content in driving user engagement and provided actionable insights for content strategy teams.</li>
+          </ul>
+  
+          <p><strong>Outcome:</strong> Created a strategic recommendation framework for content teams to prioritize video content in social media campaigns for higher audience reach and reaction rates.</p>
+        </div>  
+    </div>
+    <div class="project">
+      <button class="project-title">🚲 Predicting Dock Saturation for Bay Wheels Bike-Sharing System</button>
+      <div class="project-details">
+        <p><strong>Project Type:</strong> Predictive Modeling & Operational Analytics<br>
+        <strong>Tools Used:</strong> Python, pandas, numpy, scikit-learn, matplotlib, seaborn, SHAP</p>
+    
+        <p><strong>Objective:</strong> Help Bay Wheels proactively manage dock availability by predicting saturation events using weather and temporal data.</p>
+    
+        <ul>
+          <li><strong>Business Problem:</strong> Frequent dock saturation leads to poor customer experience and operational inefficiencies. The goal is to forecast saturation points to enable real-time bike redistribution and improved service.</li>
+          
+          <li><strong>Data Preprocessing:</strong> 
+            - Cleaned and imputed missing values<br>
+            - One-hot encoding of categorical features like season, weekday, and hour<br>
+            - Addressed skewness using Yeo-Johnson transformation<br>
+            - Scaled data using StandardScaler
+          </li>
+          
+          <li><strong>Exploratory Data Analysis (EDA):</strong>
+            - Identified non-linear relationships between temperature and saturation<br>
+            - Found peak saturation during ideal biking weather (50–75°F), rush hours, and weekdays
+          </li>
+          
+          <li><strong>Feature Engineering:</strong>
+            - Incorporated weather variables (temperature, humidity, wind speed)<br>
+            - Temporal context (hour of day, weekday, season)
+          </li>
+          
+          <li><strong>Modeling:</strong>
+            - Built and evaluated four models: Logistic Regression, Decision Tree, Random Forest, Gradient Boosted Trees<br>
+            - Used accuracy, precision, recall, and ROC-AUC as evaluation metrics<br>
+            - Performed hyperparameter tuning via GridSearchCV
+          </li>
+          
+          <li><strong>Model Interpretation:</strong> 
+            - Used SHAP values to interpret feature importance<br>
+            - Top predictors: temperature, humidity, and hour of day
+          </li>
+        </ul>
+    
+        <p><strong>Outcome:</strong> Delivered a predictive analytics tool capable of identifying high-risk saturation times and locations, enabling Bay Wheels to optimize bike rebalancing and reduce customer drop-off.</p>
+      </div>
+    </div>    
     <div class="project">
       <button class="project-title">🛳️ RH Dock Saturation Optimization Model (White Glove Delivery Route)</button>
       <div class="project-details">
@@ -161,8 +224,7 @@
         </ul>
     
         <p><strong>Outcome:</strong> Model projected to reduce overtime costs by 18%, increase average truck utilization by 22%, and streamline RH’s last-mile White Glove delivery operations in saturated metro zones.</p>
-      </div>
-    </div>    
+      </div>  
   </section>  
 
   <section id="skills" class="container">

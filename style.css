@@ -189,6 +189,7 @@ footer {
   }
 }
 
+/* Project Section */
 .project {
   margin-bottom: 30px;
   border-bottom: 1px solid #333;
@@ -198,8 +199,8 @@ footer {
 .project-title {
   background: none;
   border: none;
-  color: #fff ;
-  font-size: 1.1rem; /* Reduced from 1.2rem */
+  color: #fff;
+  font-size: 1.1rem;
   cursor: pointer;
   text-align: left;
   width: 100%;
@@ -217,8 +218,6 @@ footer {
   padding-left: 10px;
   color: #ccc;
 }
-  
-}
 
 .project-details p,
 .project-details ul {
@@ -231,4 +230,26 @@ footer {
 
 .project-details li {
   margin-bottom: 5px;
+}
+
+/* === ADDED FIX FOR PROJECT DISPLAY === */
+.feature-project {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.feature-project img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.feature-project span {
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
 }
