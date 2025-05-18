@@ -120,6 +120,7 @@
     <div class="project">
       <button class="project-title">🏡 Predicting House Prices – A Data Science Approach (Ranked #1 in Cohort)</button>
       <div class="project-details">
+        <p><strong>Project Type:</strong> Operations Research / Optimization Model<br>
         <p><strong>Objective:</strong> Built a top-ranked regression model on Kaggle housing dataset with robust EDA, transformation, and feature engineering.</p>
         <ul>
           <li><strong>Achievements:</strong> Won the Kaggle Competition in the Cohort, engineered 12+ new features, minimized prediction errors.</li>
@@ -194,6 +195,95 @@
         <p><strong>Outcome:</strong> Delivered a predictive analytics tool capable of identifying high-risk saturation times and locations, enabling Bay Wheels to optimize bike rebalancing and reduce customer drop-off.</p>
       </div>
     </div>    
+    <div class="project">
+      <button class="project-title">🛒 Revenue Prediction for Grocery Getters, Inc.</button>
+      <div class="project-details">
+        <p><strong>Project Type:</strong> Predictive Modeling & Business Analytics<br>
+        <strong>Tools Used:</strong> Python, pandas, numpy, seaborn, matplotlib, scikit-learn, statsmodels</p>
+    
+        <p><strong>Objective:</strong> Build an accurate and interpretable regression model to predict store revenue based on customer behavior and marketing interaction metrics.</p>
+    
+        <ul>
+          <li><strong>Business Problem:</strong> Grocery Getters, Inc. needed a data-driven model to identify key revenue drivers and improve forecasting for business planning and operational efficiency.</li>
+    
+          <li><strong>Data Preprocessing:</strong> 
+            - Renamed ambiguous columns and cleaned null values<br>
+            - Split data into training and testing sets (80/20)<br>
+            - Applied Min-Max Scaling for continuous variables<br>
+            - Created dummy variables for categorical fields
+          </li>
+    
+          <li><strong>Exploratory Data Analysis (EDA):</strong>
+            - Found high revenue correlation with basket size and number of items bought<br>
+            - Detected mild multicollinearity among promotional and visit features<br>
+            - Plotted revenue distributions, heatmaps, and scatter plots for feature insights
+          </li>
+    
+          <li><strong>Feature Engineering:</strong>
+            - Created aggregated interaction scores<br>
+            - Combined customer activity indicators (e.g., number of visits, promotional responses)
+          </li>
+    
+          <li><strong>Modeling:</strong>
+            - Built and evaluated multiple regression models: Linear Regression, Lasso, Ridge, ElasticNet<br>
+            - Final model: Linear Regression with R² = 0.84 on test data<br>
+            - Evaluated using RMSE, MAE, and Adjusted R²<br>
+            - Verified assumptions using residual plots, Q-Q plots, and VIF
+          </li>
+    
+          <li><strong>Model Interpretation:</strong>
+            - Interpreted coefficients using statsmodels and sklearn<br>
+            - Key revenue drivers: basket size, item count, and in-store interactions
+          </li>
+        </ul>
+    
+        <p><strong>Outcome:</strong> Delivered a robust, interpretable revenue prediction model enabling Grocery Getters to identify high-value customer behaviors and refine their marketing strategies.</p>
+      </div>
+    </div>    
+    <div class="project">
+      <button class="project-title">🏠 Airbnb Text Mining & Classification Analysis</button>
+      <div class="project-details">
+        <p><strong>Project Type:</strong> Text Mining, Sentiment Analysis & Classification<br>
+        <strong>Tools Used:</strong> R (tidytext, tm, caret), Tableau, Power BI</p>
+    
+        <p><strong>Objective:</strong> Analyze Airbnb listing descriptions to extract insights on customer sentiment, identify key topics, and classify listings for improved business strategy.</p>
+    
+        <ul>
+          <li><strong>Business Problem:</strong> Understanding guest sentiment and key listing attributes to enhance marketing strategies, optimize pricing, and improve customer experience.</li>
+          
+          <li><strong>Data Preprocessing:</strong> 
+            - Cleaned text data by removing stopwords, punctuation, and numbers<br>
+            - Tokenized and normalized text (lowercasing, stemming)<br>
+            - Handled missing data and outliers in numerical features
+          </li>
+          
+          <li><strong>Exploratory Data Analysis (EDA):</strong>
+            - Visualized word frequency distributions and Zipf’s law patterns<br>
+            - Examined review sentiment distributions and rating correlations
+          </li>
+          
+          <li><strong>Feature Engineering:</strong>
+            - Created sentiment scores from reviews using lexicon-based methods<br>
+            - Extracted key topics using Latent Dirichlet Allocation (LDA)<br>
+            - Generated TF-IDF features for classification
+          </li>
+          
+          <li><strong>Modeling:</strong>
+            - Built a Naive Bayes classifier to predict listing categories based on text features<br>
+            - Evaluated model performance using accuracy, precision, recall, and F1-score<br>
+            - Performed hyperparameter tuning and cross-validation
+          </li>
+          
+          <li><strong>Visualization & Insights:</strong>
+            - Created interactive dashboards in Tableau and Power BI to communicate findings<br>
+            - Identified top positive and negative review themes to guide hosts and product teams
+          </li>
+        </ul>
+    
+        <p><strong>Outcome:</strong> Delivered actionable insights on guest sentiment and listing characteristics, enabling data-driven marketing improvements and enhancing the Airbnb user experience.</p>
+      </div>
+    </div>
+    
     <div class="project">
       <button class="project-title">🛳️ RH Dock Saturation Optimization Model (White Glove Delivery Route)</button>
       <div class="project-details">
